@@ -7,91 +7,14 @@
   <br>
   <hr>
  
- 
-  <div class="media text-left font-weight-bold p-4 my-3">
-    
-    <img class="align-self-start mr-3 px-4" src="http://via.placeholder.com/140x130" alt="Generic placeholder image">
-    
-    <div class="media-body "> 
-      <div class="row">
-        <div class="col-10">
-          <h5 class="mt-0 py-1 text-uppercase">Black Running Shoes</h5>
-        </div>
-        <div class="col">
-          $100.99
-        </div>
-      </div>
-      <h6 class="mt-0 text-muted">SKU #MYSHOES</h6>      
-      <div>
-        <ul class="list-inline">
-          <li class="list-inline-item" style="font-size:14px;"><a href="">Men</a></li> >     
-          <li class="list-inline-item" style="font-size:14px;"><a href="">Shoes</a></li> >
-          <li class="list-inline-item" style="font-size:14px;"><a href="">Running Shoes</a></li>
-        </ul>
-         
-      </div>  
-    </div>
-    
-  </div>
- 
-
-
-   
-  <div class="media text-left font-weight-bold border border-primary rounded p-4 my-3">
-    
-      <img class="align-self-start mr-3 px-4" src="http://via.placeholder.com/140x130" alt="Generic placeholder image">
-      
-      <div class="media-body "> 
-        <div class="row">
-          <div class="col-10">
-            <h5 class="mt-0 py-1 text-uppercase">Black Running Shoes</h5>
-          </div>
-          <div class="col">
-            $100.99
-          </div>
-        </div>
-        <h6 class="mt-0 text-muted">SKU #MYSHOES</h6>      
-        <div>
-          <ul class="list-inline">
-              <li class="list-inline-item" style="font-size:14px;"><a href="">Men</a></li> >     
-              <li class="list-inline-item" style="font-size:14px;"><a href="">Shoes</a></li> >
-              <li class="list-inline-item" style="font-size:14px;"><a href="">Running Shoes</a></li>
-          </ul>
-           
-        </div>  
-      </div>
-      
-    </div>
-
-
-     
-  <div class="media text-left font-weight-bold  p-4 my-3">
-    
-      <img class="align-self-start mr-3 px-4" src="http://via.placeholder.com/140x130" alt="Generic placeholder image">
-      
-      <div class="media-body "> 
-        <div class="row">
-          <div class="col-10">
-            <h5 class="mt-0 py-1 text-uppercase">Black Running Shoes</h5>
-          </div>
-          <div class="col">
-            $100.99
-          </div>
-        </div>
-        <h6 class="mt-0 text-muted">SKU #MYSHOES</h6>      
-        <div>
-          <ul class="list-inline">
-              <li class="list-inline-item" style="font-size:14px;"><a href="">Men</a></li> >     
-              <li class="list-inline-item" style="font-size:14px;"><a href="">Shoes</a></li> >
-              <li class="list-inline-item" style="font-size:14px;"><a href="">Running Shoes</a></li>
-          </ul>
-           
-        </div>  
-      </div>
-      
-    </div>
   
-</main> 
+  <products-list  [productList] = "products" (onProductSelected)="productWasSelected($event)" 
+  >
+     
+  </products-list>
+ 
+
+ 
 
 <hr>
 <div class="footer navbar-fixed-bottom py-2">
