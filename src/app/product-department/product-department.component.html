@@ -1,0 +1,8 @@
+<div class="product-department">
+<ul class="list-inline">
+    <li *ngFor="let p of product.department; let i= index" class="list-inline-item" style="font-size:14px;">
+      <a href="">{{ p }}</a>
+      <span>{{i < (product.department.length-1) ? '>' : ''}}</span>     
+    </li> 
+</ul>
+</div>

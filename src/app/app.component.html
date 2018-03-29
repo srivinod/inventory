@@ -1,3 +1,4 @@
+ 
 <main role="main" class="container text-center py-5">
 
     <h1 class="text-uppercase "><i class="fa fa-braille pr-3"></i>Inventory App</h1>  
@@ -8,8 +9,7 @@
   <hr>
  
   
-  <products-list  [productList] = "products" (onProductSelected)="productWasSelected($event)" 
-  >
+  <products-list [productList] = "products" (onProductSelected)="productWasSelected($event)">
      
   </products-list>
  
@@ -20,3 +20,4 @@
 <div class="footer navbar-fixed-bottom py-2">
   <h6 class="text-center">This is a open source <a href="">Improve it</a></h6>
 </div>
+</main> 

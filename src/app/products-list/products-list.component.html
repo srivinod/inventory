@@ -1,25 +1,5 @@
-<div *ngFor="let p of productList" class="media text-left font-weight-bold p-4 my-3">
-    
-  <img class="align-self-start mr-3 px-4 w-25" src="{{ p.imageUrl }}" alt="Generic placeholder image">
-  
-  <div class="media-body "> 
-    <div class="row">
-      <div class="col-10">
-        <h5 class="mt-0 py-1 text-uppercase">{{ p.name }}</h5>
-      </div>
-      <div class="col">
-        $100.99
-      </div>
-    </div>
-    <h6 class="mt-0 text-muted">SKU #{{ p.sku }}</h6>      
-    <div>
-      <ul class="list-inline">
-        <li class="list-inline-item" style="font-size:14px;"><a href="">Men</a></li> >     
-        <li class="list-inline-item" style="font-size:14px;"><a href="">Shoes</a></li> >
-        <li class="list-inline-item" style="font-size:14px;"><a href="">Running Shoes</a></li>
-      </ul>
-       
-    </div>  
-  </div>
-  
-</div>
+<product-row *ngFor="let p of productList" [product]="p" 
+class="media text-left font-weight-bold p-4 my-3"
+[class.border]="isSelected(myProduct)">
+ 
+</product-row>

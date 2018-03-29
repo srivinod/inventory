@@ -1,0 +1,16 @@
+<product-image [product]="product" class=" mr-3 px-4  w-25"></product-image>
+  
+<div class="media-body "> 
+  <div class="row">
+    <div class="col-10">
+      <h5 class="mt-0 py-1 text-uppercase">{{ product.name }}</h5>
+    </div>
+    <div class="col">
+      <price-display [price]="product.price"></price-display>      
+    </div>
+  </div>
+  <h6 class="mt-0 text-muted">SKU #{{ product.sku }}</h6>      
+  <div>
+    <product-department [product]="product" ></product-department>
+  </div>  
+</div>
