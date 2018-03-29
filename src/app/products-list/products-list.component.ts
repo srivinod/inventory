@@ -18,12 +18,13 @@ export class ProductsListComponent implements OnInit {
     this.onProductSelected = new EventEmitter();
   }
 
-  clicked(product: Product): void {
+  clicked(product: Product): void { 
     this.currentProduct = product;
     this.onProductSelected.emit(product);
   }
 
   isSelected(product : Product ): boolean {
+  
     if(!product || !this.currentProduct){
       return false;
     }
